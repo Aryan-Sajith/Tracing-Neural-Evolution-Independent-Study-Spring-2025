@@ -6,4 +6,4 @@ Here we explore early ideas of mathematical models for neurons and the perceptro
 - **Authors** - Warren S. Mcculloch And Walter Pitts
 
 ## Key Idea
-Gigven the all-or-nothing(true/false) nature of neurons, their behavior and function within a larger neural network can be effectively modeled with propositional logic.
+Given the all-or-nothing(true/false) nature of neurons, their behavior and function within a larger neural network can be effectively modeled with propositional logic.
