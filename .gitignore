@@ -1,0 +1,2 @@
+# Ignore the virtualenv directory for Python
+.neural-history-is/
