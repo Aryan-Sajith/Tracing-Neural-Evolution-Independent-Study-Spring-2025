@@ -34,8 +34,6 @@ class Perceptron:
         for _ in range(self.num_iters):
             error = 0
 
-            print("Initial Bias & Weights:", self.weights)
-            
             for x_i, true_y in zip(X, y):
                 # First predict the output of input x_i
                 prediction = self.step_function_prediction(x_i)
@@ -45,9 +43,7 @@ class Perceptron:
 
                 # Update the weights and bias
                 self.weights[1:] += update * x_i # Since the weights correspond to inputs we scale by x_i
-                print("Updated Weights:", self.weights[1:])
                 self.weights[0] += update
-                print("Updated Bias:", self.weights[0])
 
                 # Update the error count if the prediction was incorrect
                 error += 0 if update == 0 else 1
