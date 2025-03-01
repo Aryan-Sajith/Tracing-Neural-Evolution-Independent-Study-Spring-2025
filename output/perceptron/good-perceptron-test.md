@@ -13,7 +13,7 @@ Base perceptron: Utilizes linearly weighted inputs to solve binary classificatio
 ## Dataset:
 - Iris dataset: Contains 100 samples of Iris-setosa and Iris-versicolor flowers.
 - Features: sepal length, sepal width, petal length, and petal width.
-- Labels: 0 for Iris-setosa and 1 for Iris-versicolor.
+- Labels: -1 for Iris-setosa and 1 for Iris-versicolor.
 - These classes are known to be linearly separable on these 4 features.
 
 ## Test Summary

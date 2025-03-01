@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
@@ -35,3 +36,48 @@ print(f"Test Accuracy: {accuracy:.3f}")
 print(f"Precision: {precision:.3f}")
 print(f"Recall: {recall:.3f}")
 print(f"F1 Score: {f1_score:.3f}")
+
+# Tracks the output of bad test for perceptron
+# Ensure the output directory exists
+os.makedirs("output/perceptron", exist_ok=True)
+
+# Create the markdown content for the good test
+bad_md_content = f"""
+# Perceptron
+
+**Model Type:**  
+Base perceptron: Utilizes linearly weighted inputs to solve binary classification problems.
+
+**Cons:**  
+- Does not perform well on non-linearly separable data.  
+- Fails to learn complex patterns (e.g., XOR) without modifications.
+
+# Negative Test Results for Perceptron:
+## Dataset:
+- Iris dataset: Contains 100 samples of Iris-virginica and Iris-versicolor flowers.
+- Features: sepal length, sepal width, petal length, and petal width.
+- Labels: -1 for Iris-virginica and 1 for Iris-versicolor.
+- These classes are known to be non-linearly separable on these 4 features.
+
+## Test Summary
+- **Accuracy:** {accuracy:.3f}
+- **Precision:** {precision:.3f}
+- **Recall:** {recall:.3f}
+- **F1 Score:** {f1_score:.3f}
+
+As can be seen above, the perceptron model performs comparably poorly on non-linearly separable classes within the Iris dataset, 
+achieving lower accuracy, recall and F1 while maintaining a perfect precision. This is expected since the two-selected classes
+(Iris-virginica and Iris-versicolor) are known to be non-linearly separable, which is a not good fit for the perceptron model. 
+
+# Further Exploration: What Comes Next?
+The perceptron model is not suitable for non-linearly separable data. To handle such cases, non-linear enhancements to the 
+model were invented. One such enhancement is the Multi-Layer Perceptron (MLP), which can learn complex patterns by introducing
+hidden layers between inputs and outputs(modelled after the multi-layered nature of the human mind), non-linear activation functions,
+and backpropagation which allows for mathematical optimization of model weights. This model is explored in the [good MLP test](good-test-mlp.md).
+"""
+
+# Write the markdown content to file
+with open("output/perceptron/bad-perceptron-test.md", "w") as f:
+    f.write(bad_md_content)
+
+print("Bad perceptron test summary written to output/perceptron/bad-perceptron-test.md")
