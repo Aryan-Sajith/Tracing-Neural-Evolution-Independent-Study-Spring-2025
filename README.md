@@ -17,7 +17,7 @@ This repository hosts the code, experiments, and analyses for the independent st
 
 ## Repository Contents
 - **code/** - Source code for all neural network implementations.
-- **experiments/** - Notebooks and scripts for conducting and replicating experiments.
+- **outputs/** - Contains outputs from testing models during the course of this study.
 - **paper/** - Drafts and the final research paper summarizing findings.
 - **docs/** - Contains important documents like the project proposal.
 - **README.md** - This primary file which outlines the details of the independent study.
