@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from sklearn import datasets
 from perceptron import Perceptron
@@ -34,3 +35,46 @@ print(f"Recall: {recall}")
 # - F1 Score: The harmonic mean of precision and recall
 f1_score = 2 * (precision * recall) / (precision + recall)
 print(f"F1 Score: {f1_score}")
+
+# Tracks the output of good test for perceptron
+# Ensure the output directory exists
+os.makedirs("output/perceptron", exist_ok=True)
+
+# Create the markdown content for the good test
+good_md_content = f"""
+# Perceptron
+
+**Model Type:**  
+Base perceptron: Utilizes linearly weighted inputs to solve binary classification problems.
+
+**Pros:**  
+- Works well when dealing with linearly separable data.  
+- Simple to implement and understand.  
+- Fast training on simple datasets.
+
+# Postive Test Results for Perceptron:
+## Dataset:
+- Iris dataset: Contains 100 samples of Iris-setosa and Iris-versicolor flowers.
+- Features: sepal length, sepal width, petal length, and petal width.
+- Labels: 0 for Iris-setosa and 1 for Iris-versicolor.
+- These classes are known to be linearly separable on these 4 features.
+
+## Test Summary
+- **Accuracy:** {accuracy:.3f}
+- **Precision:** {precision:.3f}
+- **Recall:** {recall:.3f}
+- **F1 Score:** {f1_score:.3f}
+
+As can be seen above, the perceptron model performs well on linearly separable classes within the Iris dataset, 
+achieving high accuracy, precision, recall, and F1 score. This is expected since the dataset is linearly separable, 
+which is a good fit for the perceptron model. 
+
+# What about non-linearly separable data?
+Look at the [bad perceptron test](bad-test-perceptron.md) to see how the perceptron model performs on non-linearly separable data.
+"""
+
+# Write the markdown content to file
+with open("output/perceptron/good-perceptron-test.md", "w") as f:
+    f.write(good_md_content)
+
+print("Good perceptron test summary written to output/perceptron/good-perceptron-test.md")
