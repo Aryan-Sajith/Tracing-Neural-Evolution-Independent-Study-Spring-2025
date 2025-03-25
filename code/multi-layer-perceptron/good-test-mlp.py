@@ -38,4 +38,37 @@ print(f"Precision (weighted): {precision:.3f}")
 print(f"Recall (weighted): {recall:.3f}")
 print(f"F1 Score (weighted): {f1:.3f}")
 
+# Write results of good mlp test to a output markdown file
+os.makedirs("output/multi-layer-perceptron", exist_ok=True)
+md_content = f"""
+# Multilayer Perceptron (MLP)
 
+**Model Type:**  
+Multilayer Perceptron classifier (scikit‑learn) using backpropagation.
+
+**Pros:**  
+- Capable of learning non‑linear decision boundaries.  
+- Simple API and fast convergence via Adam optimizer.  
+- Scales to high‑dimensional data (e.g., images).
+
+# Positive Test Results for MLP:
+## Dataset:
+- MNIST dataset: 70,000 handwritten‑digit images (28×28 pixels).  
+- Features: pixel intensity values (784 features).  
+- Labels: digits 0–9.
+
+## Test Summary
+- **Accuracy:** {accuracy:.3f}  
+- **Precision:** {precision:.3f}  
+- **Recall:** {recall:.3f}  
+- **F1 Score:** {f1:.3f}
+
+As shown above, the MLP classifier achieves high performance on the MNIST classification task, demonstrating its ability to learn complex, non‑linear patterns and generalize effectively to unseen data.
+
+# Next Steps
+Look at output/multi-layer-perceptron/bad-mlp-test to understand the limitations of a baseline MLP model.
+"""
+with open("output/multi-layer-perceptron/good-mlp-test.md", "w") as f:
+    f.write(md_content)
+
+print("MLP test summary written to output/multi-layer-perceptron/good-mlp-test.md")
