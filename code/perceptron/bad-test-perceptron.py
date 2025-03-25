@@ -73,7 +73,7 @@ achieving lower accuracy, recall and F1 while maintaining a perfect precision. T
 The perceptron model is not suitable for non-linearly separable data. To handle such cases, non-linear enhancements to the 
 model were invented. One such enhancement is the Multi-Layer Perceptron (MLP), which can learn complex patterns by introducing
 hidden layers between inputs and outputs(modelled after the multi-layered nature of the human mind), non-linear activation functions,
-and backpropagation which allows for mathematical optimization of model weights. This model is explored in the [good MLP test](good-test-mlp.md).
+and backpropagation which allows for mathematical optimization of model weights. This model is explored in the multi-layer-perceptron output folder.
 """
 
 # Write the markdown content to file

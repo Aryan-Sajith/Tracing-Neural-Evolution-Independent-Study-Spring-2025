@@ -27,4 +27,4 @@ achieving high accuracy, precision, recall, and F1 score. This is expected since
 which is a good fit for the perceptron model. 
 
 # What about non-linearly separable data?
-Look at the [bad perceptron test](bad-test-perceptron.md) to see how the perceptron model performs on non-linearly separable data.
+Look at the output/perceptron/bad-perceptron-test file to see how the perceptron model performs on non-linearly separable data.
