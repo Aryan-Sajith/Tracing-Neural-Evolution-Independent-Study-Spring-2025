@@ -9,3 +9,6 @@ Long Short‑Term Memory (LSTM), a landmark recurrent architecture that overcome
 - **Date Published:** 1997
 - **Authors** - Sepp Hochreiter, Jurgen Schmidhuber
 
+## Key Idea:
+Conventional feed‑forward networks treat each token independently and therefore cannot capture context across a sequence. While traditional recurrent neural networks (RNNs) introduce recurrence to model sequential dependencies, they suffer from exponentially vanishing or exploding gradients, preventing them from learning dependencies beyond a few dozen time steps. Long Short‑Term Memory (LSTM) resolves this by embedding a specialized memory cell—the constant error carousel (CEC)—coupled with multiplicative input and output gates that learn when to write, retain, or read information. This gating mechanism enforces constant error propagation through arbitrarily long intervals, enabling effective learning of very long‑range dependencies in sequential data.
+
