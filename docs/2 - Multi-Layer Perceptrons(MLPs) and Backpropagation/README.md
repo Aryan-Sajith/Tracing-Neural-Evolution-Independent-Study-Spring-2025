@@ -2,7 +2,7 @@
 
 Here we explore a key enhancement to the basic perceptron discussed in the last section-- the multi-layered perceptron(MLP) and the mathematical tool of backpropagation that helps systematically optimize MLPs.
 
-## Paper 1: [Learning Representations by Backpropagating Errors]()
+## Paper 1: [Learning Representations by Backpropagating Errors](https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf)
 
 - **Date Published:** 1986
 - **Authors** - David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams
