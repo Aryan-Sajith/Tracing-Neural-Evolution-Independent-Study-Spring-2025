@@ -2,7 +2,7 @@ import os
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import tensorflow as tf
-from tensorflow.keras import layers, models
+from tensorflow.python.keras import layers, models
 
 # Load CIFAR‑10
 (X_train, y_train), (X_test, y_test) = tf.keras.datasets.cifar10.load_data()
