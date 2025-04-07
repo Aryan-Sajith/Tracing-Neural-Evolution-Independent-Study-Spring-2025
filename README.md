@@ -3,6 +3,12 @@
 ## Overview
 This repository hosts the code, experiments, and analyses for the independent study **"Tracing the Evolution of Neural Machine Learning: From Artificial Neurons to Transformers and Beyond."** Conducted as part of CS 496 in Spring 2025 under the guidance of Professor Jaime Dávila by Aryan Sajith, this project explores the evolution of neural network architectures—from the perceptron to modern models like Transformers and emerging state-space alternatives such as Mamba.
 
+## Why?
+This research project explores the evolution of neural network architectures in response to the challenges faced in machine learning. 
+By tracing the progression from early models like perceptrons to modern architectures such as CNNs, RNNs, Transformers, 
+and emerging alternatives like Mamba, the study aims to uncover the motivations behind each design, analyze their underlying mechanics, 
+and understand their respective trade-offs and strengths in various ML contexts.
+
 ## Project Goals
 - **Core Foundations:**  
   Implementation and comparative analysis of early neural architectures including the Perceptron and Multilayer Perceptron (MLP).
