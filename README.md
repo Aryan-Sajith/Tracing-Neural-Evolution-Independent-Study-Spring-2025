@@ -30,6 +30,3 @@ and understand their respective trade-offs and strengths in various ML contexts.
 - **paper/** - Drafts and the final research paper summarizing findings.
 - **docs/** - Contains important documents like the project proposal, notes on research papers, and more.
 - **README.md** - This primary file which outlines the details of the independent study.
-
-## Getting Started
-TBD - Will be updated as the project gets going
